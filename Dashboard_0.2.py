@@ -6,8 +6,12 @@ import plotly.express as px
 import pandas as pd
 
 # Загрузка данных
-df = pd.read_csv(r"D:\other\MyPyProjects\DashBoard_Lab-rel.0\TextFile1.csv")
-df1 = pd.read_csv(r"D:\other\MyPyProjects\DashBoard_Lab-rel.0\TextFile2.csv")
+df = pd.read_csv(
+    r"https://raw.githubusercontent.com/lapkozhop/Dashboard_lab/refs/heads/main/TextFile1.csv"
+)
+df1 = pd.read_csv(
+    r"https://raw.githubusercontent.com/lapkozhop/Dashboard_lab/refs/heads/main/TextFile2.csv"
+)
 
 # Создание экземпляра приложения
 app = dash.Dash(__name__)
